@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 .DS_store
 bower_components/*
 mode_modules/*
 .sass-cache
 main-built.js
 /lib
+=======
+/lib
+>>>>>>> 59bd00022b43520dc9b1eca818bb65f8379e53da
