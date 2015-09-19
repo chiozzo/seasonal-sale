@@ -1,0 +1,12 @@
+{{#each dog_brands}}
+<div>
+	<h1>{{name}}</h1>
+	{{#each types}}
+			<h2>{{type}}</h2>
+			{{#each volumes}}
+				<h3>{{name}}</h3>
+				<h3>{{price}}</h3>
+			{{/each}}
+	{{/each}}
+</div>
+{{/each}}
