@@ -3,3 +3,4 @@ bower_components/*
 mode_modules/*
 .sass-cache
 main-built.js
+/lib
