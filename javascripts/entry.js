@@ -14,10 +14,15 @@ require.config({
 require(["jquery", "bootstrap"],function($) {
   console.log("require Working");
 
+$.ajax({
+    url: "../json/dog-food.json",
+  }).done(function(dogFood) {
 
+    console.log("dog-food JSON", dogFood);
 
-
-
-
+    require(['hbs!../templates/dog-food'], function(foodTemplate) {
+      $(foodTemplate(dogFood)).prependTo("#dog-food");
+    });
+  });
 
 });
