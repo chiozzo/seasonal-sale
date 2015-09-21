@@ -1,0 +1,25 @@
+<div class="catFood">
+    <h2>Cat Food Brands</h2>
+        {{#each cat_brands as |catBrand|}}
+         <ul>
+            <li>
+                <h2>{{brand}}</h2>
+                    {{#each types}}
+                    <ul>
+                        <li>
+                          <h3>{{this.name}}</h3>
+                          <span>Supported Breeds {{catBrand.breeds}}</span>
+                          {{#each volumes}}
+                              <ul>
+                                  <li><i>{{this.size}} &ensp; {{this.price}}&ensp; </i>
+                                  {{!-- <button id="delete">Add To Cart</button></li> --}}
+                              </ul>
+                          {{/each}}
+                        </li>
+                    </ul>
+                    {{/each}}
+            </li>
+        </ul>
+        {{/each}}
+</div>
+

@@ -18,7 +18,7 @@ require(["jquery", "bootstrap", "material"],function($) {
 
   $.material.init();
 
-$.ajax({
+  $.ajax({
     url: "../json/dog-food.json",
   }).done(function(dogFood) {
 
@@ -29,4 +29,14 @@ $.ajax({
     });
   });
 
+  $.ajax({
+    url: "../json/cat-food.json",
+  }).done(function(catFood) {
+
+    console.log("cat-food JSON", catFood);
+
+    require(['hbs!../templates/cat-food'], function(foodTemplate) {
+      $(foodTemplate(catFood)).prependTo("#cat-food");
+    });
+  });
 });
