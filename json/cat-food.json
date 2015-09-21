@@ -1,7 +1,7 @@
 {
   "cat_brands": [
     {
-      "name": "Purina",
+      "brand": "Purina",
       "breeds":
           [
           "Siamese",
@@ -11,31 +11,31 @@
           ],
       "types": [
         {
-          "type": "Kitten",
+          "name": "Kitten",
           "volumes": [
             {
-              "name": "20oz",
+              "size": "20oz",
               "price": 19.99
             },
              {
-              "name": "32oz",
+              "size": "32oz",
               "price": 26.99
             },
             {
-              "name": "64oz",
+              "size": "64oz",
               "price": 34.99
             }
           ]
         },
         {
-          "type": "Elite",
+          "name": "Elite",
           "volumes": [
             {
-              "name": "20oz",
+              "size": "20oz",
               "price": 24.99
             },
             {
-              "name": "40oz",
+              "size": "40oz",
               "price": 47.99
             }
           ]
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "name": "Meow Meal",
+      "brand": "Meow Meal",
       "breeds":
           [
             "Manx",
@@ -53,27 +53,27 @@
           ],
       "types": [
         {
-          "type": "Kitten",
+          "name": "Kitten",
           "volumes": [
             {
-              "name": "24oz",
+              "size": "24oz",
               "price": 19.99
             },
             {
-              "name": "48oz",
+              "size": "48oz",
               "price": 34.99
             }
           ]
         },
         {
-          "type": "Adult",
+          "name": "Adult",
           "volumes": [
             {
-              "name": "28oz",
+              "size": "28oz",
               "price": 22.99
             },
             {
-              "name": "56oz",
+              "size": "56oz",
               "price": 40.99
             }
           ]
