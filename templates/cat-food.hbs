@@ -1,6 +1,6 @@
 <div class="catFood">
     <h2>Cat Food Brands</h2>
-        {{#each cat_brands}}
+        {{#each cat_brands as |catBrand|}}
          <ul>
             <li>
                 <h2>{{brand}}</h2>
@@ -8,7 +8,7 @@
                     <ul>
                         <li>
                           <h3>{{this.name}}</h3>
-                          <span>Supported Breeds {{breeds}}</span>
+                          <span>Supported Breeds {{catBrand.breeds}}</span>
                           {{#each volumes}}
                               <ul>
                                   <li><i>{{this.size}} &ensp; {{this.price}}&ensp; </i>
@@ -22,3 +22,4 @@
         </ul>
         {{/each}}
 </div>
+
