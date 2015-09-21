@@ -14,17 +14,14 @@
 	        </tr>
 		    </thead>
 		    <tbody>
-	    		{{#each types}}
-	        <tr class="info">
-            <td>{{type}}</td>
-            <td>{{volumes.[0].name}}</td>
-            <td>${{volumes.[0].price}}</td>
-	        </tr>
-	        <tr class="info">
-            <td>{{type}}</td>
-            <td>{{volumes.[1].name}}</td>
-            <td>${{volumes.[1].price}}</td>
-	        </tr>
+	    		{{#each types as |theType|}}
+	    			{{#each volumes}}
+			        <tr class="info">
+		            <td>{{theType.type}}</td>
+		            <td>{{name}}</td>
+		            <td>${{price}}</td>
+			        </tr>
+	    			{{/each}}
         {{/each}}
         </tbody>
       </table>
