@@ -4,17 +4,21 @@ require.config({
     paths: {
       'jquery': '../lib/bower_components/jquery/dist/jquery.min',
       'bootstrap': '../lib/bower_components/bootstrap/dist/js/bootstrap.min',
+      "material": "../lib/bower_components/bootstrap-material-design/dist/js/material.min",
       "hbs": "../lib/bower_components/require-handlebars-plugin/hbs"
     },
     shim : {
     "bootstrap" : { "deps" :['jquery']},
+    "material": ["bootstrap"],
     }
 });
 
-require(["jquery", "bootstrap"],function($) {
+require(["jquery", "bootstrap", "material"],function($) {
   console.log("require Working");
 
-$.ajax({
+  $.material.init();
+
+  $.ajax({
     url: "../json/dog-food.json",
   }).done(function(dogFood) {
 
@@ -25,7 +29,7 @@ $.ajax({
     });
   });
 
-$.ajax({
+  $.ajax({
     url: "../json/cat-food.json",
   }).done(function(catFood) {
 

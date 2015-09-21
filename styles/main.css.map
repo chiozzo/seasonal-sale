@@ -1,7 +1,12 @@
 {
 "version": 3,
+<<<<<<< HEAD
 "mappings": "AAAA,SAAU;EACR,gBAAgB,EAAE,MAAM;;AAG1B,SAAU;EACR,gBAAgB,EAAE,GAAG",
 "sources": ["../sass/main.scss"],
+=======
+"mappings": "",
+"sources": [],
+>>>>>>> 850b53a7318064b1fac28a401bc4e8fcaa95c24d
 "names": [],
 "file": "main.css"
 }
