@@ -11,9 +11,9 @@
 1. Use handlebars template to build div displaying all brands of dog food.
     1. Brand (dog_brands.name)
     1. Type (dog_brands.types.type)
-				1. Since each ‘dog_brands’ has multiple ‘type’, the hbs template may require nested {{#each}} statements.
-		1. Size (dog_brands.types.volumes.name)
-		1. Price (dog_brands.types.volumes.price)
+        1. Since each ‘dog_brands’ has multiple ‘type’, the hbs template may require nested {{#each}} statements.
+    1. Size (dog_brands.types.volumes.name)
+    1. Price (dog_brands.types.volumes.price)
 1. Bind dog food JSON file to hbs template for dog food.
 1. Create similarly structured JSON file for cat food based on grid provided.
 1. Use handlebars template to build div displaying all brands of cat food.
