@@ -13,11 +13,14 @@ require.config({
     }
 });
 
-require(["jquery", "bootstrap", "material"],function($) {
+require(["jquery", "getFood", "bootstrap", "material"],function($, getFood) {
   console.log("require Working");
 
   $.material.init();
 
+  getFood.dogFood();
+
+/*
   $.ajax({
     url: "../json/dog-food.json",
   }).done(function(dogFood) {
@@ -28,7 +31,11 @@ require(["jquery", "bootstrap", "material"],function($) {
       $(foodTemplate(dogFood)).prependTo("#dog-food");
     });
   });
+*/
 
+  getFood.catFood();
+
+/*
   $.ajax({
     url: "../json/cat-food.json",
   }).done(function(catFood) {
@@ -39,4 +46,5 @@ require(["jquery", "bootstrap", "material"],function($) {
       $(foodTemplate(catFood)).prependTo("#cat-food");
     });
   });
+*/
 });
