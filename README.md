@@ -9,8 +9,8 @@
 ### Objective: Create and display JSON files for both dog food and cat food</h2>
 
 1. Use handlebars template to build div displaying all brands of dog food.
-		-. Brand (dog_brands.name)
-		-. Type (dog_brands.types.type)
+....-. Brand (dog_brands.name)
+....-. Type (dog_brands.types.type)
 				*. Since each ‘dog_brands’ has multiple ‘type’, the hbs template may require nested {{#each}} statements.
 		-. Size (dog_brands.types.volumes.name)
 		-. Price (dog_brands.types.volumes.price)
